@@ -1,0 +1,32 @@
+/* styles.css */
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 200px;
+    z-index: 100;
+    border-radius: 4px;
+    padding: 5px 0;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 10px; /* Give some space between button and dropdown */
+}
+
+.dropdown-visible .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+    display: block; /* Ensure full width for click area */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
